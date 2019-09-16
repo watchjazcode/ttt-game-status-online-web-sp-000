@@ -72,13 +72,16 @@ end
   # In the above case we would get
   # result = won?(board)
   # Now result should equal [0, 4, 8]
+  # Check the first element of the winning board combination
+  # result[0] should equal 0
+  # first
+  # Therefore board[0] should equal "X"
   
 def winner(board)
-
   result = won?(board)
-  
-
-  result[0]
+  if result == nil || result == false
+  index = result[0]
+  board[index]
 end
 
 
