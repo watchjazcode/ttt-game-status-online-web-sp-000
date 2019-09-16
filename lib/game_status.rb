@@ -59,13 +59,14 @@ def draw?(board)
 end
 
 #accepts a board and returns true if board is won, is a draw, or is full
-def over?
-  
-  
+def over?(board)
+  if full?(board) || won?(board) || draw?(board)
+    return true
+  end
 end
 
 # method accepts a board and returns the token X or O that has won the game.
-def winner?
+def winner?(board)
   
 end
 
