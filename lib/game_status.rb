@@ -16,6 +16,9 @@ WIN_COMBINATIONS = [
   [2, 5, 8]
 ]
 
+# iterates nested array win_combinations and determines if 
+# the same character is in all three spots for the combination
+# returns one of the win_combinations lines
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
@@ -67,7 +70,7 @@ end
 
 # method accepts a board and returns the token X or O that has won the game.
 def winner?(board)
-  
+  result = won?(board)
 end
 
 
