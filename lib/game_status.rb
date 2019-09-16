@@ -69,6 +69,7 @@ end
 # method accepts a board and returns the token X or O that has won the game.
 def winner?(board)
   result = won?(board)
+  result[0]
 end
 
 
