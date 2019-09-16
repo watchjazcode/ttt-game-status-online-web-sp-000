@@ -35,7 +35,7 @@ def won?(board)
   return nil
 end
 
-#board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
+#determines if the board is full
 def full?(board)
   board.each do | board_cell |
     if board_cell == " " || board_cell == "" || board_cell == nil
@@ -45,14 +45,25 @@ def full?(board)
   return true
 end
 
+# true if the board has not been won, but is full
+# false if the board has not been won, and not full
+# false if the board is won
 def draw?
-  
+  if full?(board) 
+    return true
+  elsif !full?(board)
+    return false
+  else
+    false
+  end
 end
 
+#accepts a board and returns true if board is won, is a draw, or is full
 def over?
   
 end
 
+# method accepts a board and returns the token X or O that has won the game.
 def winner?
   
 end
