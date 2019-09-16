@@ -72,11 +72,12 @@ end
   # In the above case we would get
   # result = won?(board)
   # Now result should equal [0, 4, 8]
+  
 def winner(board)
 
   result = won?(board)
   
-  # Now we check the first 
+
   result[0]
 end
 
