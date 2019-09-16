@@ -69,8 +69,13 @@ end
 # method accepts a board and returns the token X or O that has won the game.
 def winner(board)
   # Example: diagonal win for X
-  # board = 
+  # board = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
+  # In the above case we would get
+  # result = won?(board)
+  # Now result should equal [0, 4, 8]
   result = won?(board)
+  
+  # Now we check the first 
   result[0]
 end
 
