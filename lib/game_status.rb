@@ -68,12 +68,12 @@ end
 
 # method accepts a board and returns the token X or O that has won the game.
 def winner(board)
-  result = won?(board)
-  if result == nil || result == false
+  result = won?(board) # asking if there is a win
+  if result == nil # if no winner
     return nil
   else
-    index = result[0]
-    return board[index]
+    index = result[0] #take array (win_combination) check one of the spaces
+    return board[index] # return index character, which determines all 3 positions
   end
 end
 
